@@ -28,6 +28,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  padding-left: 100px;
+    padding-right: 100px;
 }
 
 h1 {
