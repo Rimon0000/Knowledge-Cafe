@@ -33,16 +33,16 @@
     margin-bottom: -16px;
 }
 .author_info p{
-
     font-weight: 600;
     font-size: 16px;
-    line-height: 160%;
     color: rgba(17, 17, 17, 0.6);
+}
+.time{
+    display: flex;
 }
 .author_body .time{
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
     text-align: right;
     color: rgba(17, 17, 17, 0.6);
 }
@@ -62,6 +62,9 @@
     font-size: 20px;
     color: rgba(17, 17, 17, 0.6);
     margin-top: -28px;
+}
+.btn-bookmark{
+    background-color: white;
 }
 .btn-mark{
     background-color: white;
