@@ -4,12 +4,19 @@ import './Blog.css'
 
 const Blog = () => {
     const [blogs, setBlogs] = useState([])
+    const [cart, setCart] = useState([])
 
     useEffect( () =>{
         fetch('products.json')
         .then(res => res.json())
         .then( data => setBlogs(data))
     }, [])
+
+    const handleAddToCart = (blog) =>{
+        // cart.push(blog)
+        const newCart = [...cart,blog]
+        setCart(newCart)
+    }
 
     return (
         <div className='blogs-container'>
@@ -18,11 +25,12 @@ const Blog = () => {
                     blogs.map(blog => <SingleBlog 
                         blog = {blog}
                         key = {blog.id}
+                        handleAddToCart = {handleAddToCart}
                         ></SingleBlog>)
                 }
             </div>
             <div className="cart-container">
-                <h4>this is cart</h4>
+                <h4>Bookmarked Blogs: {cart.length}</h4>
             </div>   
         </div>
     );
