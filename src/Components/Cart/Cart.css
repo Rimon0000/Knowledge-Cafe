@@ -1,0 +1,25 @@
+.bookmarked{
+    width: 411px;
+    height: 1352px;
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+}
+
+.bookmarked h4{
+    font-weight: 700;
+    font-size: 24px;
+    color: #111111;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+.bookmarked-blog{
+    width: 351px;
+    height: 98px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+.bookmarked-blog .blog-title{
+    padding-top: 20px;
+    margin-left: 16px;
+}
