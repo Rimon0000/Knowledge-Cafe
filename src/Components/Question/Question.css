@@ -1,0 +1,24 @@
+.question-container{
+    margin-top: 20px;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 8px;
+}
+.question-container .question-title{
+    text-align: center;
+    font-size: 30px;
+}
+.question{
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px 5px #ffffff;
+    background-color: white;
+}
+.question h4{
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 21px;
+}
+.question p{
+    padding-left: 15px;
+    font-size: 17px;
+}
