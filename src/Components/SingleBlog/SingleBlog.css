@@ -66,10 +66,16 @@
 .btn-bookmark{
     background-color: white;
 }
+.btn-bookmark:hover{
+    background-color: lightblue;
+}
 .btn-mark{
     background-color: white;
     font-weight: 600;
     font-size: 20px;
     text-decoration-line: underline;
     color: #6047EC;
+}
+.btn-mark:hover{
+    background-color: lightblue;
 }

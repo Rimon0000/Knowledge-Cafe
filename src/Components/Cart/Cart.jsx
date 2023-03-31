@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css'
 
 const Cart = ({cart}) => {
     // const {blog_title} = props
     // console.log(props.cart)
+    console.log(cart)
 
-    // let blog_title;
-    // for(const name of cart){
-    //     blog_title = name.blog_title
-    // }
 
     return (
-        <div>
+        <div className='cart'>
+            <div className='spend-time'>
+                <h3>Spent time on read : {0} min</h3>
+            </div>
             <div className='bookmarked'>
             <h4>Bookmarked Blogs : {cart.length}</h4>
             <div className='bookmarked-blog'>

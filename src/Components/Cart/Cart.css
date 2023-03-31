@@ -1,6 +1,22 @@
+.cart{
+    position: sticky;
+    top: 0;
+}
+
+.spend-time{
+    height: 80px;
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+}
+.spend-time h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: #6047EC;
+    padding-left: 25PX;
+}
+
 .bookmarked{
-    width: 411px;
-    height: 1352px;
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
 }
@@ -14,12 +30,13 @@
 }
 .bookmarked-blog{
     width: 351px;
-    height: 98px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .bookmarked-blog .blog-title{
     padding-top: 20px;
-    margin-left: 16px;
+    background-color: white;
+    box-shadow: 1px 1px 1px #aaaaaa;
+    border-radius: 8px;
+    padding-left: 13px;
+    padding-bottom: 15px;
 }

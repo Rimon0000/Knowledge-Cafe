@@ -6,6 +6,8 @@ import './SingleBlog.css'
 const SingleBlog = (props) => {
     const {id, blog_title,author_name,author_img,cover_img, read_time} = props.blog
     const handleAddToCart = props.handleAddToCart
+    const handleAddToTime = props.handleAddToTime
+
 
     return (
         <div className='blog'>
@@ -21,7 +23,8 @@ const SingleBlog = (props) => {
                     </div>
                     <div className='time'>
                         <p>{read_time} min read</p>
-                        <button onClick={() =>handleAddToCart(props.blog)} className='btn-bookmark'><FontAwesomeIcon icon={faBookmark} /></button>
+                        <button onClick={() => handleAddToCart(props.blog)} className='btn-bookmark'><FontAwesomeIcon icon={faBookmark} /></button>
+                        
                     </div>
                 </div>
               <h4 className='blog-name'>{blog_title}</h4>
@@ -29,7 +32,7 @@ const SingleBlog = (props) => {
                 <p>#beginners</p>
                 <p>#programming</p>
               </div>
-             <button className='btn-mark'>Mark as read</button>
+             <button onClick={() =>handleAddToTime(props.blog)} className='btn-mark'>Mark as read</button>
            </div>
         </div>
     );
