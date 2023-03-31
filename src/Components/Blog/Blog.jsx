@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Blog = () => {
     const [blogs, setBlogs] = useState([])
     const [cart, setCart] = useState([])
-    const [time, setTime] = useState([])
+    const [totalTime, setTotalTime] = useState(0)
 
     useEffect( () =>{
         fetch('products.json')
@@ -28,14 +28,8 @@ const Blog = () => {
         
     }
 
-    const handleAddToTime = (blog) =>{
-        // console.log(blog.read_time)
-        // const {read_time} = blog
-        let time = 0
-        const read_time = blog.read_time
-        time = time + read_time
-        setTime(time)
-        console.log(time)
+    const handleAddToTime = (time) =>{
+        setTotalTime(time + totalTime)  
     }
 
     return (
@@ -52,7 +46,9 @@ const Blog = () => {
                 <ToastContainer />
             </div>
             <div className="cart-container">
-                <Cart cart = {cart}></Cart>
+                <Cart cart = {cart}
+                totalTime = {totalTime}
+                ></Cart>
             </div>   
         </div>
     );

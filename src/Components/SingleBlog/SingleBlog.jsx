@@ -32,7 +32,7 @@ const SingleBlog = (props) => {
                 <p>#beginners</p>
                 <p>#programming</p>
               </div>
-             <button onClick={() =>handleAddToTime(props.blog)} className='btn-mark'>Mark as read</button>
+             <button onClick={() =>handleAddToTime(props.blog.read_time)} className='btn-mark'>Mark as read</button>
            </div>
         </div>
     );
