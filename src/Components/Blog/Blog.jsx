@@ -49,7 +49,8 @@ const Blog = () => {
                 <Cart cart = {cart}
                 totalTime = {totalTime}
                 ></Cart>
-            </div>   
+            </div> 
+              
         </div>
     );
 };

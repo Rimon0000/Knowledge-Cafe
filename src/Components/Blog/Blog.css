@@ -8,6 +8,12 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 45px;
-  
-
 }
+
+/* responsive  */
+@media only screen and (max-width: 900px) {
+    .blogs-container {
+      grid: none;
+      width: 100%;
+    }
+  }
