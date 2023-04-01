@@ -22,3 +22,13 @@
     padding-left: 15px;
     font-size: 17px;
 }
+
+/* responsive  */
+@media only screen and (max-width: 576px) {
+    .question-container{
+        width: 113%;
+    }
+    .question{
+        margin-right: 10px;
+    }
+  }

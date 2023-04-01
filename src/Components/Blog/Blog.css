@@ -11,7 +11,7 @@
 }
 
 /* responsive  */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 576px) {
     .blogs-container {
       grid: none;
       width: 100%;

@@ -41,3 +41,18 @@
     padding-bottom: 15px;
 }
 
+
+/* responsive  */
+@media only screen and (max-width: 576px) {
+    .cart{
+        width: 100%;
+    }
+    .spend-time{
+        height: 80px;
+        background: rgba(96, 71, 236, 0.1);
+        border: 1px solid #6047EC;
+        border-radius: 8px;
+        width: 100%;
+    }
+    
+  }
